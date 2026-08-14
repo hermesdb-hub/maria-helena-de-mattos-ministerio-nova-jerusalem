@@ -1,100 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:title" content="Maria Helena de Mattos | Ministério Nova Jerusalém">
-<meta property="og:description" content="Ouça as músicas de Maria Helena de Mattos nas plataformas digitais.">
-<meta property="og:type" content="website">
-<title>Maria Helena de Mattos | Ministério Nova Jerusalém</title>
-<style>
-* { box-sizing: border-box; }
-body {
-    margin: 0;
-    min-height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #171717, #343434);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 28px 16px;
-}
-.card {
-    width: 100%;
-    max-width: 460px;
-    text-align: center;
-    background: rgba(255,255,255,.08);
-    border: 1px solid rgba(255,255,255,.14);
-    border-radius: 24px;
-    padding: 34px 24px 28px;
-    box-shadow: 0 18px 50px rgba(0,0,0,.35);
-    backdrop-filter: blur(8px);
-}
-.avatar {
-    width: 96px;
-    height: 96px;
-    margin: 0 auto 18px;
-    border-radius: 50%;
-    background: #d6aa42;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #171717;
-    font-size: 42px;
-    font-weight: 700;
-    box-shadow: 0 8px 25px rgba(0,0,0,.3);
-}
-h1 { margin: 0; font-size: 25px; line-height: 1.2; }
-.subtitle { margin: 9px 0 25px; color: #ddd; font-size: 15px; }
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    width: 100%;
-    min-height: 54px;
-    margin: 12px 0;
-    padding: 14px 18px;
-    border-radius: 14px;
-    background: #fff;
-    color: #171717;
-    text-decoration: none;
-    font-weight: 700;
-    transition: transform .15s ease, opacity .15s ease;
-}
-.button:hover { transform: translateY(-2px); opacity: .92; }
-.icon { width: 25px; font-size: 18px; text-align: center; }
-.footer { margin-top: 25px; color: #aaa; font-size: 12px; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Maria Helena de Mattos | Ministério Nova Jerusalém — Ouça nas Plataformas Digitais</title>
+  <meta name="description" content="🎧 Ouça agora Maria Helena de Mattos | Ministério Nova Jerusalém nas principais plataformas digitais. Escolha sua plataforma e dê o play!">
+
+  <!-- Pré-visualização no WhatsApp / Facebook / outras redes -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Maria Helena de Mattos | Ministério Nova Jerusalém">
+  <meta property="og:description" content="🎧 Ouça agora nas plataformas digitais! Escolha sua plataforma e dê o play.">
+  <meta property="og:url" content="">
+  <meta name="twitter:card" content="summary">
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(255, 215, 100, .20), transparent 30%),
+        radial-gradient(circle at 80% 90%, rgba(100, 180, 255, .18), transparent 35%),
+        linear-gradient(145deg, #111827 0%, #182b49 48%, #0b1220 100%);
+      display: flex;
+      justify-content: center;
+      padding: 36px 18px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 560px;
+      text-align: center;
+    }
+
+    .brand {
+      margin: 0 auto 22px;
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(145deg, #e8c66b, #9f7624);
+      box-shadow: 0 12px 35px rgba(0,0,0,.35);
+      font-size: 38px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(25px, 6vw, 38px);
+      line-height: 1.12;
+      font-weight: 800;
+    }
+
+    .ministry {
+      margin-top: 8px;
+      font-size: 17px;
+      letter-spacing: .4px;
+      opacity: .86;
+    }
+
+    .call {
+      margin: 26px 0 24px;
+      padding: 18px 20px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 18px;
+      background: rgba(255,255,255,.09);
+      backdrop-filter: blur(8px);
+      font-size: 18px;
+      line-height: 1.45;
+      font-weight: 600;
+    }
+
+    .buttons {
+      display: grid;
+      gap: 13px;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 58px;
+      padding: 14px 20px;
+      border-radius: 14px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: .2px;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.16);
+      box-shadow: 0 7px 20px rgba(0,0,0,.18);
+      transition: transform .18s ease, background .18s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: rgba(255,255,255,.20);
+    }
+
+    .icon {
+      width: 30px;
+      margin-right: 10px;
+      font-size: 21px;
+    }
+
+    .footer {
+      margin-top: 26px;
+      font-size: 13px;
+      opacity: .55;
+    }
+  </style>
 </head>
+
 <body>
-<main class="card">
-    <div class="avatar">♪</div>
+  <main class="card">
+    <div class="brand">♫</div>
+
     <h1>Maria Helena de Mattos</h1>
-    <div class="subtitle">Ministério Nova Jerusalém</div>
+    <div class="ministry">Ministério Nova Jerusalém</div>
 
-    <a class="button" href="https://open.spotify.com/intl-pt/artist/2OmSo33588EopHWl2L6tPP?si=FeQsLbQ9R7i-OpBV4ip3zA" target="_blank" rel="noopener noreferrer">
-                <span class="icon">🎵</span>
-                <span>Ouça no Spotify</span>
-            </a><a class="button" href="https://music.youtube.com/channel/UCisyAh3hVV5PuD1ZwMh3ueg?si=ulcYxwC7E7yGEZn5" target="_blank" rel="noopener noreferrer">
-                <span class="icon">▶</span>
-                <span>Ouça no YouTube Music</span>
-            </a><a class="button" href="https://music.apple.com/br/artist/isabel-cristina-de-mattos/1588938134" target="_blank" rel="noopener noreferrer">
-                <span class="icon"></span>
-                <span>Ouça no Apple Music</span>
-            </a><a class="button" href="https://music.amazon.com.br/artists/B09HSNVQ4M?ref=dm_sh_HT7qOTjUZR2hOe8WR0DpzKHIl" target="_blank" rel="noopener noreferrer">
-                <span class="icon">♫</span>
-                <span>Ouça no Amazon Music</span>
-            </a><a class="button" href="https://tidal.com/artist/28720382" target="_blank" rel="noopener noreferrer">
-                <span class="icon">T</span>
-                <span>Ouça no TIDAL</span>
-            </a><a class="button" href="https://www.youtube.com/channel/UCisyAh3hVV5PuD1ZwMh3ueg" target="_blank" rel="noopener noreferrer">
-                <span class="icon">▶</span>
-                <span>Ouça no YouTube</span>
-            </a>
+    <div class="call">
+      Sejam bem vindos!<br>
+      Escolha sua plataforma preferida e escute as músicas.
+    </div>
 
-    <div class="footer">Ouça, compartilhe e acompanhe nossas músicas.</div>
-</main>
+    <section class="buttons" aria-label="Plataformas digitais">
+      <a class="button" href="https://www.youtube.com/channel/UCisyAh3hVV5PuD1ZwMh3ueg" target="_blank" rel="noopener noreferrer">
+        <span class="icon">▶</span> YouTube
+      </a>
+
+      <a class="button" href="https://music.youtube.com/channel/UCisyAh3hVV5PuD1ZwMh3ueg?si=ulcYxwC7E7yGEZn5" target="_blank" rel="noopener noreferrer">
+        <span class="icon">♫</span> YouTube Music
+      </a>
+
+      <a class="button" href="https://open.spotify.com/intl-pt/artist/2OmSo33588EopHWl2L6tPP?si=FeQsLbQ9R7i-OpBV4ip3zA" target="_blank" rel="noopener noreferrer">
+        <span class="icon">●</span> Spotify
+      </a>
+
+      <a class="button" href="https://music.amazon.com.br/artists/B09HSNVQ4M?ref=dm_sh_HT7qOTjUZR2hOe8WR0DpzKHIl" target="_blank" rel="noopener noreferrer">
+        <span class="icon">♪</span> Amazon Music
+      </a>
+
+      <a class="button" href="https://tidal.com/artist/28720382" target="_blank" rel="noopener noreferrer">
+        <span class="icon">◆</span> TIDAL
+      </a>
+
+      <a class="button" href="https://music.apple.com/br/artist/isabel-cristina-de-mattos/1588938134" target="_blank" rel="noopener noreferrer">
+        <span class="icon"></span> Apple Music
+      </a>
+    </section>
+
+    <div class="footer">Maria Helena de Mattos • Ministério Nova Jerusalém</div>
+  </main>
 </body>
 </html>
